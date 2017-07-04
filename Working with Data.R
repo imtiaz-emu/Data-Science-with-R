@@ -11,7 +11,10 @@ cars <- read.table(
     quote = "\"")
 
 # Peek at the data
-head(cars)
+head(cars,5)
+
+# remove faulty data with 'NA' 
+cars <- na.omit(cars)
 
 # Load the dplyr library
 library(dplyr)

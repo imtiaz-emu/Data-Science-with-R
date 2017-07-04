@@ -5,6 +5,7 @@
 "Hornet 4 Drive"	"Automatic"	6	21.4
 "Hornet Sport"	"Automatic"	8	18.7
 "Valiant"	"Automatic"	6	18.1
+"ValiantError"	NA	6	18.1
 "Duster 360"	"Automatic"	8	14.3
 "Merc 240D"	"Automatic"	4	24.4
 "Merc 230"	"Automatic"	4	22.8
