@@ -15,8 +15,21 @@ mean(mtcars$qsec)
 # median qsec value
 median(mtcars$qsec)
 
+# mode of carburator (carb) value
+mode <- function(vector) {
+  uniq <- unique(vector)
+  uniq[which.max(tabulate(match(vector, uniq)))]
+}
+mode(mtcars$carb)
+table(mtcars$carb)
+
 # quartile qsec value
 quantile(mtcars$qsec)
+
+quantile(mtcars$qsec, .7)
+
+# standard deviation of qsec value
+sd(mtcars$qsec)
 
 # sum of qsec value
 sum(mtcars$qsec)
@@ -27,4 +40,4 @@ cor(
   y = mtcars$qsec
 )
 
-# summary(mtcars)
+summary(mtcars)
