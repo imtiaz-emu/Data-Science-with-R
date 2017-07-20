@@ -5,11 +5,12 @@ data("iris")
 head(iris)
 
 # draw a scatterplot based on petal width
-petal_plot <- ggplot(data = iris, aes(x = Petal.Width, y = Petal.Length)) +
+petal_plot <- ggplot(data = iris, aes(x = Petal.Length, y = Petal.Width)) +
               geom_point() + 
               ggtitle("Scatterplot of petal width & length") +
-              xlab("petal width") +
-              ylab("petal length")
+              xlab("petal length") +
+              ylab("petal width")
+petal_plot
 
 # create a linear regression model
 linear_model <- lm(
